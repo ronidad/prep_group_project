@@ -12,3 +12,9 @@ print("The average temprarure is " +  str(mean(temprature)))
 for student in students.keys():
     #you can also use students.items to get key value pair
     print(student)
+
+phone_numbers = {"Ronald": " 725029795", "Benard": " 724648426"}
+for value in phone_numbers.values():
+    print(value.replace(" ", "254"))
+
+    
