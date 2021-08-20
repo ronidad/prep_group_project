@@ -6,4 +6,7 @@ def greet(who_to_greet):
 
 print(greet('Ronnie'))
 
+def mean(number):
+    the_mean = sum(number)/len(number)
+    return the_mean
 
