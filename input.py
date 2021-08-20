@@ -7,3 +7,14 @@ def sentence_maker(phrase):
         print(capitalized)
 
 print(sentence_maker ("HOW ARE YOU"))
+
+results = []
+
+while True:
+    user_input = input("say something: ")
+    if user_input =="\end":
+        break
+    else:
+        results.append(user_input)
+print(results)
+
