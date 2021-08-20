@@ -1,12 +1,13 @@
 def sentence_maker(phrase):
+    interogatives = ("how", "why", "what")
     capitalized = phrase.capitalize()
-    interogatives = ("how".capitalize(), "why".capitalize(), "what".capitalize())
-    if capitalized.startswith(interogatives):
-        print(capitalized + str("?"))
+    
+    if phrase.startswith(interogatives):
+        return (capitalized + str("?"))
     else:
-        print(capitalized)
+        return (capitalized + str("."))
 
-print(sentence_maker ("HOW ARE YOU"))
+
 
 results = []
 
@@ -15,6 +16,6 @@ while True:
     if user_input =="\end":
         break
     else:
-        results.append(user_input)
-print(results)
-
+        results.append(sentence_maker(user_input))
+#print(results)
+print(" ".join(results))
