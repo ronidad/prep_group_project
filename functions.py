@@ -6,7 +6,10 @@ def greet(who_to_greet):
 
 print(greet('Ronnie'))
 
-def mean(number):
-    the_mean = sum(number)/len(number)
+def mean(value):
+    if type(value) == dict:
+        the_mean = sum(value.values()) /len(value)
+    else:
+        the_mean = sum(value)/len(value)
     return the_mean
 
