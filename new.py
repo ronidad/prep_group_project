@@ -17,4 +17,15 @@ phone_numbers = {"Ronald": " 725029795", "Benard": " 724648426"}
 for value in phone_numbers.values():
     print(value.replace(" ", "254"))
 
+# password = ""
+# while password !="password":
+#     password=input("Enter password")
+# while True:
+#     username= input("Enter username ")
+#     if username == "ron":
+#         break
+#     else:
+#         continue
+
+
     
